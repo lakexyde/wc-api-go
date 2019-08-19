@@ -56,7 +56,7 @@ func executeRequest(c Client, r *request.Request) (*http.Response, error) {
 	case "GET":
 		return c.Get(r.Endpoint, r.Values)
 	case "POST":
-		return c.Post(r.Endpoint, r.Values)
+		return c.Post(r.Endpoint, r.Values, nil)
 	case "PUT":
 		return c.Put(r.Endpoint, r.Values)
 	case "DELETE":

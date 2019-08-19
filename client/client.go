@@ -21,11 +21,12 @@ func (c *Client) Get(endpoint string, parameters url.Values) (*http.Response, er
 }
 
 // Post Method usually creates new instances
-func (c *Client) Post(endpoint string, data url.Values) (*http.Response, error) {
+func (c *Client) Post(endpoint string, data url.Values, body []byte) (*http.Response, error) {
 	return c.sender.Send(request.Request{
 		Method:   "POST",
 		Endpoint: endpoint,
 		Values:   data,
+		Body:     body,
 	})
 }
 
