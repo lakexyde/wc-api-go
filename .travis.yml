@@ -3,6 +3,6 @@ language: go
 go:
   - "1.11.x"
 
-go_import_path: github.com/tgglv/wc-api-go
+go_import_path: github.com/ducnt114/wc-api-go
 
 script: go test -v ./...

@@ -1,7 +1,7 @@
-package auth // import "github.com/tgglv/wc-api-go/auth"
+package auth // import "github.com/ducnt114/wc-api-go/auth"
 
 import (
-	"github.com/tgglv/wc-api-go/options"
+	"github.com/ducnt114/wc-api-go/options"
 	"net/url"
 )
 

@@ -8,14 +8,14 @@ A Golang wrapper for the WooCommerce REST API. Easily interact with the WooComme
 
 To install this WooCommerce REST API Golang Wrapper, use `go get`:
 ```
-go get github.com/tgglv/wc-api-go
+go get github.com/ducnt114/wc-api-go
 ```
 
 ## Staying up to date
 
 To update WooCommerce REST API Golang Wrapper to the latest version, use
 ```
-go get -u github.com/tgglv/wc-api-go
+go get -u github.com/ducnt114/wc-api-go
 ```
 
 ## Getting started
@@ -29,7 +29,7 @@ Check out the WooCommerce API endpoints and data that can be manipulated in <htt
 Setup for the new WP REST API integration:
 
 ```go
-import "github.com/tgglv/wc-api-go/client"
+import "github.com/ducnt114/wc-api-go/client"
 
 func main() {
 	factory := client.Factory{}
@@ -119,8 +119,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/tgglv/wc-api-go/client"
-	"github.com/tgglv/wc-api-go/options"
+	"github.com/ducnt114/wc-api-go/client"
+	"github.com/ducnt114/wc-api-go/options"
 	"io/ioutil"
 	"log"
 	"net/http"
