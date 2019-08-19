@@ -23,7 +23,7 @@ func (s *Sender) Send(req request.Request) (resp *http.Response, err error) {
 func (s *Sender) prepareRequest(req request.Request) *http.Request {
 	URL := s.urlBuilder.GetURL(req)
 	var request *http.Request
-	if req.Values != nil && ("POST" == req.Method || "PUT" == req.Method) {
+	if req.Method == http.MethodPost || req.Method == http.MethodPut {
 		request, _ = s.requestCreator.NewRequest(req.Method, URL, bytes.NewBuffer(req.Body))
 	} else {
 		request, _ = s.requestCreator.NewRequest(req.Method, URL, nil)
