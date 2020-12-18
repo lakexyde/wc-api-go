@@ -88,13 +88,13 @@ c.Get(endpoint, parameters)
 ### POST
 
 ```go
-c.Post(endpoint, data)
+c.Post(endpoint, parameters, data)
 ```
 
 ### PUT
 
 ```go
-c.Put(endpoint, data)
+c.Put(endpoint, parameters, data)
 ```
 
 ### DELETE
