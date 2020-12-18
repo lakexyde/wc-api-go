@@ -1,4 +1,4 @@
-package auth // import "github.com/ducnt114/wc-api-go/auth"
+package auth // import "github.com/lakexyde/wc-api-go/auth"
 
 import (
 	"crypto/hmac"
@@ -6,10 +6,11 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"fmt"
-	"github.com/ducnt114/wc-api-go/options"
 	"net/url"
 	"sort"
 	"strings"
+
+	"github.com/lakexyde/wc-api-go/options"
 )
 
 const hashAlgorithm string = "SHA256"

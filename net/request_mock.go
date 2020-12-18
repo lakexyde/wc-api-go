@@ -1,8 +1,9 @@
 package net
 
 import (
-	"github.com/ducnt114/wc-api-go/auth"
 	"net/http"
+
+	"github.com/lakexyde/wc-api-go/auth"
 )
 
 // RequestEnricherMock ...

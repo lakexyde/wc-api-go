@@ -1,11 +1,12 @@
-package client // import "github.com/ducnt114/wc-api-go/client"
+package client // import "github.com/lakexyde/wc-api-go/client"
 
 import (
-	"github.com/ducnt114/wc-api-go/auth"
-	"github.com/ducnt114/wc-api-go/net"
-	"github.com/ducnt114/wc-api-go/options"
-	"github.com/ducnt114/wc-api-go/url"
 	"net/http"
+
+	"github.com/lakexyde/wc-api-go/auth"
+	"github.com/lakexyde/wc-api-go/net"
+	"github.com/lakexyde/wc-api-go/options"
+	"github.com/lakexyde/wc-api-go/url"
 )
 
 // Factory Structure

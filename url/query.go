@@ -1,8 +1,9 @@
-package url // import "github.com/ducnt114/wc-api-go/url"
+package url // import "github.com/lakexyde/wc-api-go/url"
 
 import (
-	"github.com/ducnt114/wc-api-go/request"
 	"net/url"
+
+	"github.com/lakexyde/wc-api-go/request"
 )
 
 // QueryEnricher uses package auth to enrich existing query parameters with Authentication Based ones

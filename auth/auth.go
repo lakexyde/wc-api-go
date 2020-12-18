@@ -1,11 +1,12 @@
-package auth // import "github.com/ducnt114/wc-api-go/auth"
+package auth // import "github.com/lakexyde/wc-api-go/auth"
 
 import (
-	"github.com/ducnt114/wc-api-go/options"
-	"github.com/ducnt114/wc-api-go/request"
 	"net/http"
 	"net/url"
 	"strings"
+
+	"github.com/lakexyde/wc-api-go/options"
+	"github.com/lakexyde/wc-api-go/request"
 )
 
 // BasicAuthenticationQueryEnricher ...
