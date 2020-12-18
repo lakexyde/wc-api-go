@@ -2,12 +2,13 @@ package net
 
 import (
 	"errors"
-	"github.com/ducnt114/wc-api-go/options"
-	"github.com/ducnt114/wc-api-go/request"
-	"github.com/ducnt114/wc-api-go/test"
-	"github.com/stretchr/testify/assert"
 	"net/url"
 	"testing"
+
+	"github.com/lakexyde/wc-api-go/options"
+	"github.com/lakexyde/wc-api-go/request"
+	"github.com/lakexyde/wc-api-go/test"
+	"github.com/stretchr/testify/assert"
 )
 
 const defaultURL = "http://woo.dev"

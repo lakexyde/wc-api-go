@@ -2,13 +2,14 @@ package client
 
 import (
 	"errors"
-	"github.com/ducnt114/wc-api-go/request"
-	"github.com/ducnt114/wc-api-go/test"
-	"github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"testing"
+
+	"github.com/lakexyde/wc-api-go/request"
+	"github.com/lakexyde/wc-api-go/test"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestRequest(t *testing.T) {

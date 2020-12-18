@@ -1,11 +1,12 @@
 package url
 
 import (
-	"github.com/ducnt114/wc-api-go/options"
-	"github.com/ducnt114/wc-api-go/request"
-	"github.com/stretchr/testify/assert"
 	URL "net/url"
 	"testing"
+
+	"github.com/lakexyde/wc-api-go/options"
+	"github.com/lakexyde/wc-api-go/request"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestGetURL(t *testing.T) {

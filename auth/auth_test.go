@@ -1,10 +1,11 @@
 package auth
 
 import (
-	"github.com/ducnt114/wc-api-go/options"
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"testing"
+
+	"github.com/lakexyde/wc-api-go/options"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestEnrichRequest(t *testing.T) {

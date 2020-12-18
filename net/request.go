@@ -1,4 +1,4 @@
-package net // import "github.com/ducnt114/wc-api-go/net"
+package net // import "github.com/lakexyde/wc-api-go/net"
 
 import "net/http"
 
