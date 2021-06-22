@@ -44,16 +44,12 @@ func (o *OAuth) GetEnrichedQuery() url.Values {
 }
 
 func generateSign(o *OAuth) {
-	var urlEncoded string
-	urlEncoded = encode(o.URL)
 
 	o.Parameters = normalize(&o.Parameters)
 
-	var qs string
-	qs = queryString(&o.Parameters)
+	qs := queryString(&o.Parameters)
 
-	var stringToSign string
-	stringToSign = o.Method + "&" + urlEncoded + "&" + qs
+	stringToSign := strings.Join([]string{o.Method, encode(o.URL), encode(qs)}, "&")
 
 	mac := hmac.New(sha256.New, []byte(o.getSecret()))
 	mac.Write([]byte(stringToSign))
@@ -65,7 +61,10 @@ func generateSign(o *OAuth) {
 }
 
 func encode(s string) string {
-	return url.QueryEscape(s)
+	s = url.QueryEscape(s)
+	// s = strings.ReplaceAll(s, "+", "%20")
+	// s = strings.ReplaceAll(s, "%2B", "%20")
+	return s
 }
 
 func normalize(p *url.Values) url.Values {
@@ -86,10 +85,11 @@ func queryString(p *url.Values) string {
 	sort.Strings(keys)
 
 	var result []string
-	for _, k := range keys {
-		result = append(result, encode(k+"="+p.Get(k)))
+	for _, key := range keys {
+		val := encode(p.Get(key))
+		result = append(result, fmt.Sprintf("%s=%s", key, val))
 	}
-	return strings.Join(result, "%26")
+	return strings.Join(result, "&")
 }
 
 // SetMicrotimer ...

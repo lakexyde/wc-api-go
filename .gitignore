@@ -13,3 +13,6 @@
 
 .idea/**
 .vscode/**
+
+main.go
+tmp
